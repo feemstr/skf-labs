@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,8 @@
     "joi": "^14.3.1",
     "lodash": "4.6.1",
     "multer": "^1.4.4",
-    "nodemon": "^2.0.15"
-  }
+    "nodemon": "^2.0.15",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
